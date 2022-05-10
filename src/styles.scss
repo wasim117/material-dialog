@@ -1,16 +1,30 @@
 body {
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
   margin: 0;
   padding: 30px;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
-.black-60{
-  background-color: rgba(0,0,0,0.6);
+.black-60 {
+  background-color: rgba(0, 0, 0, 0.6);
 }
-.white-60{
-  background-color: rgba(255,255,255,0.6);
+.white-60 {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.mytheme-dialog {
+  .mat-dialog-container {
+    border-radius: 16px;
+  }
+}
+.dark-dialog {
+  .mat-dialog-container {
+    border-radius: 16px;
+    background-color: #262626;
+    color: rgba(255, 255, 255, 0.87);
+  }
 }
