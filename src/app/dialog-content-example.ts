@@ -15,18 +15,35 @@ export class DialogContentExample {
     const dialogRef = this.dialog.open(DialogContentExampleDialog, {
       panelClass: 'mytheme-dialog',
       backdropClass: ['black-60', 'white-60'],
-      minHeight: '100px',
-      height: '80vh',
-      maxHeight: '600px',
-      width: '90%',
-      minWidth: '100px',
-      maxWidth: '1200px',
+      //   minHeight: '100px',
+      //   height: '80vh',
+      //   maxHeight: '600px',
+      //   width: '90%',
+      //   minWidth: '100px',
+      //   maxWidth: '1200px',
     });
 
     dialogRef.afterClosed().subscribe((result) => {
       console.log(`Dialog result: ${result}`);
     });
   }
+  openDarkDialog() {
+    const dialogRef = this.dialog.open(DialogContentExampleDialog, {
+      panelClass: 'dark-dialog',
+      backdropClass: ['black-60'],
+      //   minHeight: '100px',
+      //   height: '80vh',
+      //   maxHeight: '600px',
+      //   width: '90%',
+      //   minWidth: '100px',
+      //   maxWidth: '1200px',
+    });
+
+    dialogRef.afterClosed().subscribe((result) => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
+  
 }
 
 @Component({
